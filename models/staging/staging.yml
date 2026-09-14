@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_olist__orders
+    description: Cleaned order-level data with normalized statuses and lifecycle timestamps.
+
+  - name: stg_olist__order_items
+    description: Cleaned order item data at the order and item grain.
+
+  - name: stg_olist__order_payments
+    description: Cleaned payment data with one row per payment record.
+
+  - name: stg_olist__order_reviews
+    description: Cleaned customer review data.
+
+  - name: stg_olist__customers
+    description: Cleaned customer data including unique customer identifiers and location.
+
+  - name: stg_olist__products
+    description: Cleaned product attributes, categories, dimensions, and weights.
+
+  - name: stg_olist__sellers
+    description: Cleaned seller information and location attributes.
+
+  - name: stg_olist__category_translation
+    description: Mapping between Portuguese and English product category names.
+
+  - name: stg_olist__geolocation
+    description: Cleaned raw geolocation data at postal-code coordinate level.
